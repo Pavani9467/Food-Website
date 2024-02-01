@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1cacdfcf78.js" crossorigin="anonymous"></script>
+</head>
+<style>
+#custom-nav-link1
+{
+	color:#323f4b;
+	font-family:"Roboto";
+	font-size:20px;
+}
+#custom-nav-link2
+{
+	color:#323f4b;
+	font-family:"Roboto";
+	font-size:20px;
+}
+#custom-nav-link3
+{
+	color:#323f4b;
+	font-family:"Roboto";
+	font-size:20px;
+}
+.india-img
+{
+	width:70px;
+	height:50px;
+}
+.india-imageBack
+{
+	background-image:url("https://tse4.mm.bing.net/th?id=OIP.J-isKgrHYLDwJoOk6_BopAHaDY&pid=Api&P=0&h=180");
+	background-size:cover;
+	height:50px;
+	width:200%;
+	margin-top:0px;
+	
+}
+.banner-section-bg-container
+{
+	background-image:url("https://vegplatter.in/files/public/inline-images/bg_12.jpg");
+	background-size:cover;
+	height:100vh;
+	width:100%;
+}
+.banner-heading
+{
+	color:white;
+	font-family:"Roboto";
+	font-size:40px;
+	font-weight:300;
+}
+.banner-caption
+{
+	color:#f5f7fa;
+	font-family:"Roboto";
+	font-size:24px;
+	font-weight:300;
+}
+.custom-button1
+{
+	width:130px;
+	height:45px;
+	color:white;
+	background-color:#d0b200;
+	border-width:0;
+	border-radius:8px;
+	margin-right:10px;
+}
+.custom-button2
+{
+	width:130px;
+	height:45px;
+	color:white;
+	border-style:solid;
+	background-color:transparent;
+	border-width:1px;
+	border-radius:8px;
+	margin-right:10px;
+	border-color:#d0b200;
+}
+.why-choose-section
+{
+	background-color:#ffffe6;
+}
+.wcs-heading
+{
+	font-family:"Roboto";
+	font-weight:700;
+	font-size:28px;
+	color:#183b56;
+}
+.wcs-discription
+{
+	font-family:"Roboto";
+	font-size:16px;
+	color:#5a7184;
+}
+.wcs-card
+{
+	background-color:white;
+	border-radius:15px;
+	border-style:solid;
+	border-width:2px;
+	border-color:red;
+	
+}
+.wcs-image
+{
+	height:90px;
+	width:87px;
+}
+.Explore-menu
+{
+	background-image:url("https://images.creativemarket.com/0.1.0/ps/7358706/1820/1213/m1/fpnw/wm1/r4ejcddlzrzpyfjdouhnnkfgfjrjuy4xyhhcnkuxt3m6rh05n4fnjqlf92qwdpkn-.jpg?1574658759&s=bdcb7212acfc1980a7cfee59581e102a");
+	background-size:cover;
+}
+.Non-vegHeading
+{
+	color:white;
+	text-align:center;
+	font-weight:500;
+	font-size:35px;
+	text-decoration:underline;
+}
+ul
+{
+	color:black;
+	font-weight:700;
+	font-size:25px;
+}
+.list-Container
+{
+	background-color:white;
+	padding:10px;
+	border-radius:15px;
+	
+}
+.list-container-heading
+{
+	font-size:25px;
+	font-family:"Roboto";
+	font-weight:bold;
+}
+li
+{
+	font-size:15px;
+	font-family:"Roboto";
+}
+.Recipe-card
+{
+	background-color:white;
+	padding:20px;
+	border-radius:10px;
+	margin:10px;
+}
+.chicken-Recipe
+{
+	background-image:linear-gradient(#ccffff,#e6ffff);
+}
+.Egg-Recipe
+{
+	background-image:linear-gradient(#ffccff,#ffe6ff);
+}
+.Mutton-Recipe
+{
+	background-image:linear-gradient(#d9ffb3,#e6ffcc);
+}
+.Fish-Recipe
+{
+	background-image:linear-gradient(#e6ccff,#f2e6ff);
+}
+.breakfast-container
+{
+	background-image:linear-gradient(#809fff,#b3c6ff);
+}
+.snacks-container
+{
+	background-image:linear-gradient(#ffb399,#ffc6b3);
+}
+.Lunch-container
+{
+	background-image:linear-gradient(#99ffb3,#b3ffc6);
+}
+.Dinner-container
+{
+	background-image:linear-gradient(#bf83fb,#cc9cfc);
+}
+.fruits-section-Container
+{
+	background-image:linear-gradient(#e6e6e6,#f2f2f2);
+}
+.discound-section
+{
+	background-color:white;
+}
+
+.arrow
+{
+	color:#cc9900;
+	font-size:15px;
+}
+.veg-container
+{
+	background-image:url("https://wallpapercave.com/wp/wp8558453.jpg");
+	background-size:cover;
+}
+.follow-us-section
+{
+	background-color:white;
+}
+.follow-us-section-rounds
+{
+	background-color:#ffeecc;
+	border-radius:50px;
+	height:100px;
+	width:100px;
+}
+.bottom-section-container
+{
+	background-color:#00001a;
+	background-size:cover;
+	height:50vh;
+}
+.bottom-section-container-image1
+{
+	background-image:url("http://4.bp.blogspot.com/-A9DC1uVjM6o/UCymoSO8ulI/AAAAAAAAECM/zWcFEM1vYD0/s1600/Indian%2BFlag%2BPhotos-03.jpg");
+	background-size:cover;
+	height:120px;
+	width:120px;
+	border-radius:100px;
+	
+}
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="#">
+<div class="india-imageBack text-center">
+<img src="https://tandoor.com/wp-content/uploads/2019/03/new-png-min-800x800.png" class="india-img" style="padding:5px;"/>
+<p style="font-size:9px; font-weight:bold; font-style:italic;">indian Food</p>
+</div>
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link active" id="custom-nav-link1" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" id="custom-nav-link2" href="#whychoose">why_choose_us</a>
+      <a class="nav-link" id="custom-nav-link3" href="#Non-veg-item">Non-veg</a>
+	<a class="nav-link" id="custom-nav-link3" href="#veg-item">vegetarian</a>
+	<a class="nav-link" id="custom-nav-link3" href="#order-now">Order-Now</a>
+	<a class="nav-link" id="custom-nav-link3" href="#follow-us">Follow-us</a>
+	</div>
+	</div>
+	</div>
+</nav>
+
+<div class="banner-section-bg-container d-flex flex-column justify-content-center" id="home">
+<div class="text-center">
+<h1 class="banner-heading mb-3">Welcome To indian Food Restaurant</h1>
+<p class="banner-caption mb-3">Eat smart & Healthy</p>
+<button class="custom-button1">View Menu</button>
+<button class="custom-button2">View Menu</button>
+</div>
+</div>
+
+<div class="why-choose-section pt-4 pb-4" id="whychoose">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<h1 class="wcs-heading">Why Choose Indian Food...?</h1>
+<p class="wcs-discription">Researchers analyzed more than 2,500 recipes to figure out why Indian food is so damn tasty—and it turns out to be very different than the Western approach to creating dishes.</p>
+<h1 class="wcs-heading text-center">...About my Restautant...</h1>
+</div>
+
+<div class="container col-12 col-md-3 mt-2">
+<div class="wcs-card text-center">
+<img src="https://tse1.mm.bing.net/th?id=OIP._YUnQPefvmeBzXwVlBXbCAHaFw&pid=Api&P=0&h=180" style="width:120px; height:120px;">
+<p class="wcs-discription"> We use both original recipes and classic versions of famous fooditems.</p>
+</div>
+</div>
+
+<div class="col-12 col-md-3 mt-2">
+<div class="wcs-card text-center">
+<img src="https://image.freepik.com/free-vector/fresh-food-typography-logo-design-premium-vector_106244-129.jpg" style="width:150px; height:150px;">
+<p class="wcs-discription">The fresh Food provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+</div>
+</div>
+
+<div class="container col-12 col-md-3 mt-2">
+<div class="wcs-card text-center">
+<img src="https://www.psdstamps.com/wp-content/uploads/2019/12/round-best-offer-stamp-png.png" style="width:150px; height:120px;">
+<p class="wcs-discription">The fresh Food provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="Explore-menu pt-3 pb-5 ">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h1 class="Non-vegHeading" id="Non-veg-item">Non-vegetarian Recipes</h1>
+</div>
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">Chicken Recipes</mark></h1>
+<ul>
+	<li><a href="#butterChicken">Butter Chicken</a></li>
+	<li><a href="#ChickenBiryani">Chicken Biryani</a></li>
+	<li><a href="#AndhraChicken">Andhra Chicken fry</a></li>
+	<li><a href="#ChickenTikki">chicken Tikki</a></li>
+	<li><a href="#TandooriChiken">Tandoori Chicken</a></li>
+	<li><a href="#ChickenBurger">Chicken Burger</a></li>
+	<li><a href="#ChilliChicken">Chilli Chicken</a></li>
+	<li><a href="#ChickenButter">Chicken Butter Masala</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark style="background-color:#ffffcc;">Egg Recipes</mark></h1>
+<ul>
+	<li><a href="#EggFriedRice">Egg fried rice</a></li>
+	<li><a href="#BoiledEggFry">Boiled Egg Fry</a></li>
+	<li><a href="#EggKeema">Egg keema</a></li>
+	<li><a href="#EggFriedNoodles">Egg Fried Noodles</a></li>
+	<li><a href="#EggMasala">Egg Masala</a></li>
+	<li><a href="#EggPulao">Egg Pulao</a></li>
+	<li><a href="#EggRoast">Egg Roast</a></li>
+	<li><a href="#EggPulusu">Egg pulusu</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">Mutton Recipes</mark></h1>
+<ul>
+	<li><a href="#MuttonKabab">Mutton Kabab</a></li>
+	<li><a href="#MuttonKorma">Mutton Korma</a></li>
+	<li><a href="#AndhraMutton">Andhra Mutton fry</a></li>
+	<li><a href="#MuttonBiryani">Mutton Biryani</a></li>
+	<li><a href="#MuttonFry">Mutton fry</a></li>
+	<li><a href="#MuttonCurry">Mutton Curry</a></li>
+	<li><a href="#MuttonPulsu">Mutton Pulusu</a></li>
+	<li><a href="#MuttonKabab">Mutton Kabab</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">Fish Recipes</mark></h1>
+<ul>
+	<li><a href="#ApolloFish">Apollo Fish</a></li>
+	<li><a href="#BakedFish">Baked fish</a></li>
+	<li><a href="#ChilliFish">chilli fish</a></li>
+	<li><a href="#FishPulusu">Fish pulusu</a></li>
+	<li><a href="#AndraFishFry">Andhra fish fry</a></li>
+	<li><a href="#FishRice">Fish Rice</a></li>
+	<li><a href="#FishTikka">Fish tikka</a></li>
+	<li><a href="#FishFry">fish fry</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="chicken-Recipe">
+<h1 class="wcs-heading" style="background-color:#ccffff; text-align:center; padding:10px; text-decoration:underline;">Chicken Recipes</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="butterChicken">
+<div class="Recipe-card shadow">
+<img src="http://2.bp.blogspot.com/-TD5K2vnX-QY/UOUZlKkt8qI/AAAAAAAAAKQ/kkOeUpCCcL8/s1600/butter_Chicken.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Butter Chicken</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChickenBiryani">
+<div class="Recipe-card shadow">
+<img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" style="width:100%; height:20%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chicken biryani</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="AndhraChicken">
+<div class="Recipe-card shadow">
+<img src="https://img-global.cpcdn.com/recipes/e86e4424d07bc30f/1502x1064cq70/andhra-pepper-chicken-recipe-main-photo.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Andhra Chicken</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChickenTikki">
+<div class="Recipe-card shadow">
+<img src="http://irepo.primecp.com/2017/10/351683/Tandoori-Chicken-Tikka-with-Lemon-and-Sage_ExtraLarge1000_ID-2483976.jpg?v=2483976" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chicken Tikki</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="TandooriChiken">
+<div class="Recipe-card shadow">
+<img src="https://1.bp.blogspot.com/-PCYeH0r_isQ/UyxIDNVs-2I/AAAAAAAAAwg/5JYdWA92Eik/s1600/DSCN4280.JPG" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Tandoori Chiken</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChickenBurger">
+<div class="Recipe-card shadow">
+<img src="https://www.chicken.ca/wp-content/uploads/2020/09/Moist-Chicken-Burgers.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chicken Burger</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChilliChicken">
+<div class="Recipe-card shadow">
+<img src="https://weewok.ca/wp-content/uploads/2017/12/65D581E5-CC89-4C76-B3E0-3C1CD451E3FC.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chilli Chicken</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChickenButter">
+<div class="Recipe-card shadow">
+<img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken-.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chicken Butter</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="Egg-Recipe">
+<h1 class="wcs-heading" style="background-color:#ffccff; text-align:center; padding:10px; text-decoration:underline;">Egg Recipes</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="EggFriedRice">
+<div class="Recipe-card shadow">
+<img src="https://www.simplyscratch.com/wp-content/uploads/2016/09/Vegetable-Fried-Rice-with-Egg-l-SimplyScratch.com-8.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Fried Rice</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="BoiledEggFry">
+<div class="Recipe-card shadow">
+<img src="https://i1.wp.com/myvegetarianroots.com/wp-content/uploads/2020/08/DSC_0033.jpeg?fit=1920%2C1277&ssl=1" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Boiled Egg Fry</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggKeema">
+<div class="Recipe-card shadow">
+<img src="https://pamelakanjilal.files.wordpress.com/2010/04/img_2030.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Keema</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggFriedNoodles">
+<div class="Recipe-card shadow">
+<img src="https://www.errenskitchen.com/wp-content/uploads/2016/03/Fried-egg-noodles4.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Fried Noodles</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggMasala">
+<div class="Recipe-card shadow">
+<img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Egg-Masala.jpg" style="width:100%; height:40%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Masala</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggPulao">
+<div class="Recipe-card shadow">
+<img src="https://i.pinimg.com/originals/a5/06/2d/a5062dda893376fcd84f32d00e8a73b5.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Pulao</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggRoast">
+<div class="Recipe-card shadow">
+<img src="https://images.indulgexpress.com/uploads/user/imagelibrary/2020/6/12/original/Kerala_Egg_Roast_for_web.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Roast</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="EggPulusu">
+<div class="Recipe-card shadow">
+<img src="https://4.bp.blogspot.com/-w4zcVcAM1Co/V4WGl0Yv5cI/AAAAAAAAG7o/rqTqwUJNHloRPe_mXPxLP_R1ASAwAECSACLcB/s1600/DSC_0046.JPG" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Egg Pulusu</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="Mutton-Recipe">
+<h1 class="wcs-heading" style="background-color:#d9ffb3; text-align:center; padding:10px; text-decoration:underline;">Mutton Recipes</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="MuttonKabab">
+<div class="Recipe-card shadow">
+<img src="https://bellydarbar.in/wp-content/uploads/2021/03/mutton-sheek-4-1536x1024.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Kabab</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonKorma">
+<div class="Recipe-card shadow">
+<img src="https://1.bp.blogspot.com/-YZ7EE8yNIOE/UEfXkVv-0mI/AAAAAAAAAxw/vW9khsTdTOI/s1600/IMG_2679.JPG" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Korma</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="AndhraMutton">
+<div class="Recipe-card shadow">
+<img src="https://i.pinimg.com/originals/55/f7/ff/55f7ffb01c631730b2415c7641286383.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Andhra Mutton</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonBiryani">
+<div class="Recipe-card shadow">
+<img src="https://spiceeats.com/wp-content/uploads/2020/07/Mutton-Biryani.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Biryani</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonFry">
+<div class="Recipe-card shadow">
+<img src="http://4.bp.blogspot.com/-noO4sK6RPYg/UUvtgTIkEVI/AAAAAAAACHA/12T7CiZCr94/s1600/DSC_3800.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Fry</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonCurry">
+<div class="Recipe-card shadow">
+<img src="https://4.bp.blogspot.com/-aHyO0FDcHEM/WRtPtQxJRUI/AAAAAAAAMDE/sv1W-ds0w2MVwUQlH5TA9euYHAdvlgA8wCLcB/s1600/mutton%2B%2Bcurry%2B2.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Curry</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonPulsu">
+<div class="Recipe-card shadow">
+<img src="https://i.ytimg.com/vi/tNz8_DTvTF4/maxresdefault.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Pulsu</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonKabab">
+<div class="Recipe-card shadow">
+<img src="https://img-global.cpcdn.com/recipes/2301f34e7edeed95/751x532cq70/apollo-fish-fry-recipe-main-photo.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Mutton Kabab</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="Fish-Recipe">
+<h1 class="wcs-heading" style="background-color:#e6ccff; text-align:center; padding:10px; text-decoration:underline;">Fish Recipes</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="ApolloFish">
+<div class="Recipe-card shadow">
+<img src="https://delhiclubadelaide.com.au/wp-content/uploads/2020/11/Apollo-Fish.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Apollo Fish</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="BakedFish">
+<div class="Recipe-card shadow">
+<img src="https://images.kglobalservices.com/www.kelloggs.ca_en/en_ca/recipe/kicrecipe-15081/recip_img-5570455_spicy_herb_crusted_baked_fish.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Baked Fish</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChilliFish">
+<div class="Recipe-card shadow">
+<img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chilli-Fish-500x500.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chilli Fish</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="FishPulusu">
+<div class="Recipe-card shadow">
+<img src="https://i0.wp.com/southindianrecipes.in/wp-content/uploads/2021/07/Chepala-Pulusu.jpg?resize=768,853&ssl=1" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Fish Pulusu</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="AndraFishFry">
+<div class="Recipe-card shadow">
+<img src="http://3.bp.blogspot.com/__GqnC_R5O9M/SxSDvjNOCnI/AAAAAAAAARU/H4aDAl4ib8k/s1600/fish+fry.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Andhra Fish Fry</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="FishRice">
+<div class="Recipe-card shadow">
+<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2016/02/fish-rice-recipe.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Fish Rice</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="FishTikka">
+<div class="Recipe-card shadow">
+<img src="https://maunikagowardhan.co.uk/wp-content/uploads/2014/07/Tandoori-Fish-Tikka.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Fish Tikka</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="FishFry">
+<div class="Recipe-card shadow">
+<img src="https://1.bp.blogspot.com/-dmr7TvaMJ7c/WRyLh1RZjlI/AAAAAAAAIF4/uPHo3WFtctE8ZS34-s0mkRyNRkU-2-SzgCLcB/s1600/0000000000000000000000A%2B%25281%2529.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Fish Fry</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="veg-container pt-4 pb-4" id="veg-item">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h1 class="Non-vegHeading">vegetarian Recipes</h1>
+</div>
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">BreakFast items</mark></h1>
+<ul>
+	<li><a href="#Puri">Puri</a></li>
+	<li><a href="#Dosa">Dosa</a></li>
+	<li><a href="#Idli">Idli</a></li>
+	<li><a href="#Upma">Upma</a></li>
+	<li><a href="#Pulihora">Pulihora</a></li>
+	<li><a href="#Ponganalu">Ponganalu</a></li>
+	<li><a href="#MisoreBonda">Misore Bonda</a></li>
+	<li><a href="#Pongal">Pongal</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark style="background-color:#ffffcc;">Indian snacks</mark></h1>
+<ul>
+	<li><a href="#Masalavada">Masala vada</a></li>
+	<li><a href="#PaniPuri">Pani Puri</a></li>
+	<li><a href="#Momos">Momos</a></li>
+	<li><a href="#KutchiDabeli">Kutchi Dabeli</a></li>
+	<li><a href="#AkkiRoto">Akki Roti</a></li>
+	<li><a href="#ChocolatePizza">Chocolate Pizza</a></li>
+	<li><a href="#Gilabe">Gilabe</a></li>
+	<li><a href="#Dhokla">Dhokla</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">Lunch with veg</mark></h1>
+<ul>
+	<li><a href="#MuttonKabab1">Rice & Dall</a></li>
+	<li><a href="#MuttonKorma2">Rice & Sambar</a></li>
+	<li><a href="#AndhraMutton3">Mudha-Pappu</a></li>
+	<li><a href="#MuttonBiryani4">cuard-rice</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 mt-4">
+<div class="list-Container d-flex flex-row justify-content-center">
+<div>
+<h1 class="list-container-heading"><mark  style="background-color:#ffffcc;">Dinner with veg</mark></h1>
+<ul>
+	<li><a href="#ApolloFish1">Roti with dall</a></li>
+	<li><a href="#BakedFish2">Gobi-rice</a></li>
+	<li><a href="#ChilliFish3">Parota</a></li>
+	<li><a href="#FishPulusu4">Rice with vegtable-Kurma</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="breakfast-container">
+	<h1 class="wcs-heading" style="background-color:#809fff; text-align:center; padding:10px; text-decoration:underline;">BreakFast items</h1>
+	<div class="container-fluid">
+	<div class="row">
+	
+	<div class="col-6 col-md-3" id="Puri">
+	<div class="Recipe-card shadow">
+	<img src="https://www.pakistanihealthyrecipes.com/wp-content/uploads/2021/06/how-to-make-halwa-puri-recipe-at-home.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Puri</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Dosa">
+	<div class="Recipe-card shadow">
+	<img src="https://apollosugar.com/wp-content/uploads/2018/12/Plain-Dosa.jpg" style="width:100%; height:20%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Dosa</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Idli">
+	<div class="Recipe-card shadow">
+	<img src="https://chennaimemes.in/wp-content/uploads/2018/03/idly.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Idli</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Upma">
+	<div class="Recipe-card shadow">
+	<img src="https://i0.wp.com/healthyvegrecipes.com/wp-content/uploads/2014/07/IMG_1644.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Upma</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Pulihora">
+	<div class="Recipe-card shadow">
+	<img src="https://3.bp.blogspot.com/-w_e9vjvNYlg/V9qjQHYf_qI/AAAAAAAAASQ/5xDYWvpmybYuGeEbsZryYn3y4WzzkyNEwCLcB/s1600/pulihora.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Pulihora</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Ponganalu">
+	<div class="Recipe-card shadow">
+	<img src="https://1.bp.blogspot.com/-KrcdLPXYaIM/TWuVxekiXKI/AAAAAAAADtU/8u-7ApIeiHU/s1600/DSC02029.JPG" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Ponganalu</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="MisoreBonda">
+	<div class="Recipe-card shadow">
+	<img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Madhuli_Ajay/Aloo_Bonda_Deep_fried_snack_made_with_potato_filling_and_gram_flour_batter.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Misore Bonda</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Pongal">
+	<div class="Recipe-card shadow">
+	<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/01/pongal-ven-pongal-500x375.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Pongal</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+
+
+<div class="snacks-container">
+	<h1 class="wcs-heading" style="background-color:#ffb399; text-align:center; padding:10px; text-decoration:underline;">Indian snacks</h1>
+	<div class="container-fluid">
+	<div class="row">
+	
+	<div class="col-6 col-md-3" id="Masalavada">
+	<div class="Recipe-card shadow">
+	<img src="http://3.bp.blogspot.com/-XOXAjPLcfvY/U0Lr4D5QXYI/AAAAAAAAIwk/ENdmDelEftI/s1600/IMG_8812+copy.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Masala vada</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="PaniPuri">
+	<div class="Recipe-card shadow">
+	<img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Madhuli_Ajay/Mumbai_Style_Pani_Puri.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Pani Puri</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Momos">
+	<div class="Recipe-card shadow">
+	<img src="https://recipedose.com/wp-content/uploads/2013/03/Chicken-momos.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Momos</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="KutchiDabeli">
+	<div class="Recipe-card shadow">
+	<img src="https://i0.wp.com/www.cookingfromheart.com/wp-content/uploads/2017/06/Kutchi-Dabeli-4.jpg?resize=1024%2C683" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Kutchi Dabeli</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="AkkiRoto">
+	<div class="Recipe-card shadow">
+	<img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Kalyani_S/Masala_Akki_Roti_Recipe_Spicy_Rice_Flour_Flatbread_Recipe-1.jpg" style="width:100%; height:40%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Akki Roti</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	
+	<div class="col-6 col-md-3" id="ChocolatePizza">
+	<div class="Recipe-card shadow">
+	<img src="https://www.tasteofhome.com/wp-content/uploads/2017/10/Chocolate-Peanut-Butter-Pizza_EXPS_THFM18_3538_D09_15_9b-3.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Chocolate pizza</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	
+	
+	<div class="col-6 col-md-3" id="Gilabe">
+	<div class="Recipe-card shadow">
+	<img src="https://i.huffpost.com/gen/859530/images/o-INDAIN-SWEETS-JALEBI-facebook.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Gilebe</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	<div class="col-6 col-md-3" id="Dhokla">
+	<div class="Recipe-card shadow">
+	<img src="https://mla3kj7xizij.i.optimole.com/a9eNSsk-tu9ADsO9/w:auto/h:auto/q:auto/https://buzztowns.com/wp-content/uploads/2021/07/Dhokla-Recipe.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+	<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Dhokla</h1>
+	<a href="" class="arrow">Order Now
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+	</svg>
+	</a>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+
+
+
+<div class="Lunch-container">
+<h1 class="wcs-heading" style="background-color:#99ffb3; text-align:center; padding:10px; text-decoration:underline;">Lunch with Veg</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="MuttonKabab1">
+<div class="Recipe-card shadow">
+<img src="https://cdn.cdnparenting.com/articles/2018/11/19123301/soft-mashed-rice-and-moong-dal-recipe_726334837.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Rice & Dal</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonKorma2">
+<div class="Recipe-card shadow">
+<img src="http://4.bp.blogspot.com/-DVJCqM77Ir4/VQz9bLBp90I/AAAAAAAA3Bs/Gwxc-NesGs4/s1600/10974543_10204165831520041_2992490028930931780_o%2B(1).jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Rice & Sambar</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="AndhraMutton3">
+<div class="Recipe-card shadow">
+<img src="https://aahaaramonline.com/wp-content/uploads/2021/06/Ragi_Sankati_Finger_Millet_and_Rice_Balls.png" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">RagiSangati with dal</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="MuttonBiryani4">
+<div class="Recipe-card shadow">
+<img src="http://womenpla.net/wp-content/uploads/2014/07/curd-rice.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">cuard-rice</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="Dinner-container">
+<h1 class="wcs-heading" style="background-color:#bf83fb; text-align:center; padding:10px; text-decoration:underline;">Dinner-Container</h1>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-6 col-md-3" id="ApolloFish1">
+<div class="Recipe-card shadow">
+<img src="https://www.myhealthbuddy.co/blog/wp-content/uploads/2017/08/daal-roti-indian-fiber-diet.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Roti with dal</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="BakedFish2">
+<div class="Recipe-card shadow">
+<img src="https://3.bp.blogspot.com/-MpqKkdPeouc/WceeaL5diNI/AAAAAAAAbKg/HpB2XACTUOoPYhsuOLgGk7hfgiCLuKHCwCEwYBhgL/s1600/9154.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Gobi-rice</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="ChilliFish3">
+<div class="Recipe-card shadow">
+<img src="https://static.toiimg.com/thumb/msid-76344801,imgsize-81967,width-800,height-600,resizemode-75/76344801.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Parota</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+
+<div class="col-6 col-md-3" id="FishPulusu4">
+<div class="Recipe-card shadow">
+<img src="https://selfproclaimedfoodie.com/wp-content/uploads/Vegetable-Korma-Self-Proclaimed-Foodie-Auto-Height-9.jpg" style="width:100%; height:50%; border-radius:10px;"/>
+<h1 style="font-size:20px; font-family:Roboto" class="mt-3">Rice with vegtable-Kurma</h1>
+<a href="" class="arrow">Order Now
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="fruits-section-Container pb-5">
+<h1 style=" font-size:30px; font-family:Roboto; text-align:center;" class="pt-5 pb-5"><img src="https://tse4.mm.bing.net/th?id=OIP.tIK1qHBR1baElQlYkxTk8wHaEK&pid=Api&P=0&h=180" style="width:50px; height:40px;"/>...Order Indian Food Eat and Enjoy...<img src="https://tse4.mm.bing.net/th?id=OIP.tIK1qHBR1baElQlYkxTk8wHaEK&pid=Api&P=0&h=180" style="width:50px; height:40px;"/></h1>
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-4 text-center">
+<img src="https://i.pinimg.com/originals/54/c8/d6/54c8d6c2e1db45a0d61992d2266f4fa0.jpg" style="width:150px; height:150px;"/>
+</div>
+<div class="col-12 col-md-8">
+<h1 style=" font-size:30px; font-family:Roboto;">Fresh,Healthy,Organic,Delisious food</h1>
+<p style="font-size:15px; font-family:Roboto;">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature.</p>
+<button class="custom-button1">Watch Video</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="discound-section pb-5 pt-5" id="order-now">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-4 text-center order-md-2">
+<img src="https://media.istockphoto.com/photos/render-gold-text-25-percent-off-picture-id521232791?k=6&m=521232791&s=612x612&w=0&h=46qgZYEDwb168aHqEcugOEDane1Dr4NjHyv1YmVaL1o=" style="width:150px; height:150px;"/>
+</div>
+<div class="col-12 col-md-8 order-md-1">
+<h1 style=" font-size:30px; font-family:Roboto;">Delivery and Payment</h1>
+<p style="font-size:15px; font-family:Roboto;">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 25% discount on every order every time you pay online.</p>
+<button class="custom-button1">Order Now</button>
+<div>
+<img src="https://www.aboutwebsites.info/wp-content/uploads/2020/11/Paytm-Logo.jpg" style="width:70px; height:70px;"/>
+<img src="https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png" style="width:70px; height:70px;"/>
+<img src="https://i.pinimg.com/474x/72/28/ab/7228ab788ca60f708275b6d7aea5f7be.jpg" style="width:70px; height:70px;"/>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<h1 style=" font-size:30px; font-family:Roboto; text-align:center;">Follow Us</h1>
+<div class="follow-us-section pt-4 pb-5 d-flex flex-row justify-content-center" id="follow-us">
+<div class="follow-us-section-rounds d-flex flex-column justify-content-center">
+<i class="fa-brands fa-linkedin fa-2xl text-center" style="color:#d0b200;"></i>
+</div>
+<div class="follow-us-section-rounds d-flex flex-column justify-content-center ml-4">
+<i class="fa-brands fa-facebook fa-2xl text-center" style="color: #d0b200;"></i>
+</div>
+<div class="follow-us-section-rounds d-flex flex-column justify-content-center ml-4">
+<i class="fa-brands fa-twitter fa-2xl text-center" style="color: #d0b200;"></i>
+</div>
+</div>
+
+<div class="bottom-section-container">
+<div class="d-flex flex-row justify-content-center pt-5">
+<div class="bottom-section-container-image1 d-flex flex-column justify-content-center">
+<img src="https://www.travelsiteindia.com/blog/wp-content/uploads/2018/04/traditional-indian-food-sessions.jpg" style="width:70px; height:70px; border-radius:50px; margin-left:48px;"/>
+</div>
+</div>
+<p style="text-align:center; color:white; font-family:Roboto;">Indian Food</p>
+<p style="text-align:center; color:white; font-family:Roboto; font-size:20px; font-weight:bold;">OrderIndianfood@indianfood.com</p>
+<p style="text-align:center; color:white; font-family:Roboto; font-size:15px;">143 Sapthagiri circle,Anantapur,Andhra Pradesh,India</p>
+
+</div>
+
+
+
+   
+</body>
+</html>
